@@ -1,0 +1,46 @@
+{
+  "name": "aldump/supermetrics",
+  "description": "Supermetrics test assesment",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Ales Eremeev",
+      "email": "ales.eremeev@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "nesbot/carbon": "^2.46"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^9",
+    "slevomat/coding-standard": "^6.3",
+    "squizlabs/php_codesniffer": "^3.5",
+    "vimeo/psalm": "^4.0",
+    "phpstan/phpstan": "^0.12.83"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "all": {
+      "codestyle": "@codestyle",
+      "static-analysis": "@static-analysis"
+    },
+    "codestyle": "@php vendor/bin/phpcs",
+    "csfix": "@php vendor/bin/phpcbf",
+    "static-analysis": {
+      "phpstan": "@php vendor/bin/phpstan analyse -c phpstan.neon",
+      "psalm": "@php vendor/bin/psalm"
+    }
+  }
+}

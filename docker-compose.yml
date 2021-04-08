@@ -1,0 +1,7 @@
+version: '3'
+services:
+  php:
+    image: aldump/php:8.0
+    volumes:
+      - ./app:/var/www
+    working_dir: /var/www
