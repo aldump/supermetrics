@@ -15,8 +15,8 @@ class SupermetrixApiClient implements ApiClientInterface
     private const BASE_URI = 'https://api.supermetrics.com';
     private const CONFIG = [
         'client_id' => 'ju16a6m81mhid5ue1z3v2g0uh',
-        'email' => 'aa@aa.com',
-        'name' => 'aaa',
+        'email' => 'ales.eremeev@gmail.com',
+        'name' => 'Ales Eremeev',
     ];
 
     private ?string $apiToken = null;
