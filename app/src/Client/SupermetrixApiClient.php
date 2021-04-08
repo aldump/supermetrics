@@ -19,7 +19,7 @@ class SupermetrixApiClient implements ApiClientInterface
         'name' => 'aaa',
     ];
 
-    private ?string $apiToken;
+    private ?string $apiToken = null;
     private Client $client;
 
     /**
