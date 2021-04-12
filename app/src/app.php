@@ -18,5 +18,5 @@ echo json_encode(
         'b' => $postStatistics->getLongest('month'),
         'c' => $postStatistics->getTotal('week'),
         'd' => $postStatistics->getAvgPostsPerUser('user.month'),
-    ],
-);
+    ], JSON_PRETTY_PRINT
+) . PHP_EOL;
